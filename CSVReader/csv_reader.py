@@ -1,7 +1,7 @@
 import csv
 import json
 
-def csv_dict(path='/Users/thiyageshdhandapani/Documents/Thiyagesh_code/Python-Cache-main/CSVReader/missing_rc_events.csv'):
+def csv_dict(path='C:\Users\thiya\Documents\Python Coding\python_advanced\CSVReader\missing_rc_events.csv'):
     with open(path) as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         line_count = 0
@@ -24,7 +24,7 @@ def csv_dict(path='/Users/thiyageshdhandapani/Documents/Thiyagesh_code/Python-Ca
     with open(rc_list_path, "w+") as fin:
         json.dump(d, fin)
 
-def csv_reader(path='/Users/thiyageshdhandapani/Documents/Thiyagesh_code/Python-Cache-main/CSVReader/CAN.csv'):
+def csv_reader(path='C:\Users\thiya\Documents\Python Coding\python_advanced\CSVReader\CAN.csv'):
     with open(path) as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         line_count = 0
